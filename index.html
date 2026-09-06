@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune Systems | Infrastructure</title>
+    <style>
+        :root {
+            --bg: #050505;
+            --text: #f0f0f0;
+            --muted: #666666;
+            --border: #222222;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 2rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .grid-container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            border-left: 1px solid var(--border);
+            padding-left: 3rem;
+        }
+
+        .label {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 500;
+            letter-spacing: -0.03em;
+            margin: 0 0 1.5rem 0;
+            line-height: 1.1;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            max-width: 500px;
+            line-height: 1.6;
+            margin: 0 0 3rem 0;
+        }
+
+        .contact-block {
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+        }
+
+        a.btn {
+            display: inline-block;
+            background: transparent;
+            color: var(--text);
+            text-decoration: none;
+            border: 1px solid var(--text);
+            padding: 0.8rem 1.5rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s ease-in-out;
+        }
+
+        a.btn:hover {
+            background: var(--text);
+            color: var(--bg);
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                padding-left: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <span class="label">Status: Provisioning</span>
+        
+        <h1>Dune Systems</h1>
+        
+        <p>
+            Enterprise infrastructure and data sovereignty. <br>
+            We build, deploy, and manage isolated environments for businesses moving away from Big Tech.
+        </p>
+
+        <div class="contact-block">
+            <span class="label" style="margin-bottom: 1rem;">Direct Line</span>
+            <a href="mailto:info@dunesys.net" class="btn">Contact Engineering</a>
+        </div>
+    </div>
+
+</body>
+</html>
