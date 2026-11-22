@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Last Chest</title>
+  <style>
+    :root {
+      --bg: #10192b;
+      --card: #fdf4e3;
+      --ink: #1f1712;
+      --muted: #5b493c;
+      --gold: #f5b316;
+      --green: #22b14c;
+      --blue: #2d7ff9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #10192b 0%, #1d2d4a 100%);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 4px solid var(--ink);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+    }
+    header {
+      background: linear-gradient(180deg, #ffd147 0%, var(--gold) 100%);
+      border-bottom: 4px solid var(--ink);
+      padding: 20px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.55rem;
+      letter-spacing: 0.2px;
+    }
+    header p {
+      margin: 2px 0 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #422b07;
+    }
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+    }
+    .lang-btn {
+      cursor: pointer;
+      border: 2.5px solid var(--ink);
+      border-radius: 12px;
+      padding: 8px 14px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      background: #fff9ee;
+      color: var(--ink);
+    }
+    .lang-btn.active {
+      background: var(--green);
+      color: #ffffff;
+    }
+    main {
+      padding: 24px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--blue);
+      color: #ffffff;
+      border: 2px solid var(--ink);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    h2 {
+      margin-top: 22px;
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+      border-bottom: 2px solid #e6d5b8;
+      padding-bottom: 4px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .highlight-box {
+      background: #fff9ee;
+      border: 2px solid #d4bc96;
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 14px 0;
+    }
+    code {
+      background: #f0e3cc;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.88em;
+    }
+    .hidden { display: none; }
+    footer {
+      text-align: center;
+      color: #c5d2eb;
+      margin-top: 18px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Last Chest — Privacy Policy</h1>
+        <p>Package: <code>net.dunesys.lastchest</code> &bull; Effective Date: 22 November 2026</p>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language toggle">
+        <button id="btn-en" class="lang-btn active" type="button" onclick="setLang('en')">English</button>
+        <button id="btn-nl" class="lang-btn" type="button" onclick="setLang('nl')">Nederlands</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="sec-en">
+        <span class="badge">100% Offline &bull; Zero Data Collection</span>
+        <div class="highlight-box">
+          <strong>Summary:</strong> Last Chest runs completely offline on your device. We do <strong>not</strong> collect, store, track, sell, or share any personal or gameplay data.
+        </div>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect <strong>no personal information</strong> and <strong>no analytics data</strong>. Specifically, Last Chest:</p>
+        <ul>
+          <li>Does not request the Android <code>INTERNET</code> permission.</li>
+          <li>Does not include third-party advertising SDKs, crash trackers, or telemetry services.</li>
+          <li>Does not require accounts, sign-ins, names, emails, or device identifiers.</li>
+        </ul>
+
+        <h2>2. Local Save Data &amp; Backups</h2>
+        <p>Your mine progress, upgrades, managers, collected items, sound toggle, and language preference are stored locally on your device inside private app storage (<code>SharedPreferences</code>). You can erase all progress anytime via the in-game Settings menu or by uninstalling the app.</p>
+        <p>If you have Android Auto Backup enabled in your device's Google account settings, Android may back up your local game save file (<code>last_chest_save.xml</code>) encrypted by Android Backup Service so you can restore your mines on a new phone.</p>
+
+        <h2>3. Children's Privacy</h2>
+        <p>Because Last Chest does not collect any data from anyone, it does not knowingly collect personal information from children under 13 or any other age group.</p>
+
+        <h2>4. Changes to This Policy</h2>
+        <p>If future updates ever introduce optional online features or cloud services, this Privacy Policy will be updated on this page before those changes go live.</p>
+
+        <h2>5. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy or Last Chest, contact us at: <strong>support@dunesys.net</strong></p>
+      </section>
+
+      <section id="sec-nl" class="hidden">
+        <span class="badge">100% Offline &bull; Geen Gegevensverzameling</span>
+        <div class="highlight-box">
+          <strong>Samenvatting:</strong> Last Chest draait volledig offline op jouw toestel. Wij verzamelen, volgen, bewaren, verkopen of delen <strong>geen</strong> persoonlijke of spelgegevens.
+        </div>
+
+        <h2>1. Welke gegevens wij verzamelen</h2>
+        <p>Wij verzamelen <strong>geen persoonsgegevens</strong> en <strong>geen statistieken</strong>. Last Chest:</p>
+        <ul>
+          <li>Heeft geen Android <code>INTERNET</code>-permissie en verstuurt geen data over het netwerk.</li>
+          <li>Bevat geen advertentie-SDK's, crash-trackers of analyse-diensten van derden.</li>
+          <li>Vereist geen account, inloggegevens, naam, e-mailadres of apparaat-ID.</li>
+        </ul>
+
+        <h2>2. Lokale opslag en back-ups</h2>
+        <p>Je mijnvoortgang, upgrades, managers, verzamelde items, geluidsinstelling en taalvoorkeur worden uitsluitend lokaal in de beveiligde app-opslag (<code>SharedPreferences</code>) bewaard. Je kunt al je voortgang op elk moment wissen via Instellingen in de game of door de app te verwijderen.</p>
+        <p>Als Android Automatische Back-up is ingeschakeld in je Android-instellingen, kan Android je lokale spelopslag (<code>last_chest_save.xml</code>) versleuteld back-uppen via Google Backup zodat je op een nieuwe telefoon verder kunt spelen.</p>
+
+        <h2>3. Privacy van kinderen</h2>
+        <p>Omdat Last Chest van niemand gegevens verzamelt, worden er ook geen persoonsgegevens van kinderen jonger dan 13 jaar verzameld.</p>
+
+        <h2>4. Wijzigingen in dit privacybeleid</h2>
+        <p>Als toekomstige updates ooit optionele online functies toevoegen, wordt dit privacybeleid op deze pagina bijgewerkt vóórdat die update beschikbaar komt.</p>
+
+        <h2>5. Contact</h2>
+        <p>Heb je vragen over dit privacybeleid of over Last Chest? Neem contact op via: <strong>support@dunesys.net</strong></p>
+      </section>
+    </main>
+  </div>
+
+  <footer>Last Chest &copy; 2026 &bull; Offline Idle Mining &amp; Vault Game</footer>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('sec-en').classList.toggle('hidden', lang !== 'en');
+      document.getElementById('sec-nl').classList.toggle('hidden', lang !== 'nl');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-nl').classList.toggle('active', lang === 'nl');
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>
